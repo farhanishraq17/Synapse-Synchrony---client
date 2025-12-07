@@ -21,7 +21,7 @@ const services = [
       'Daily / Weekly Goals',
       'Quick Add',
     ],
-    color: 'bg-red-500',
+    color: 'bg-green-500',
   },
   {
     icon: Bell,

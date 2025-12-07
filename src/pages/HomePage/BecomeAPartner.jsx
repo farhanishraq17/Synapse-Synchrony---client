@@ -79,12 +79,12 @@ const BecomePartner = () => {
                 data-aos-duration="900"
               >
                 {/* Icon */}
-                <div className="w-16 h-16 rounded-xl bg-red-700 flex items-center justify-center mb-5 shadow-md transform transition-transform duration-300 group-hover:scale-110">
+                <div className="w-16 h-16 rounded-xl bg-green-700 flex items-center justify-center mb-5 shadow-md transform transition-transform duration-300 group-hover:scale-110">
                   <Icon className="w-8 h-8 text-white" />
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl sm:text-2xl font-semibold mb-3 transition-colors duration-300 group-hover:text-red-700">
+                <h3 className="text-xl sm:text-2xl font-semibold mb-3 transition-colors duration-300 group-hover:text-green-700">
                   {benefit.title}
                 </h3>
 
@@ -104,11 +104,11 @@ const BecomePartner = () => {
           data-aos-delay={400}
           data-aos-duration="900"
         >
-          <button className="inline-flex items-center justify-center bg-red-700 text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl hover:bg-red-800 transition-all duration-300">
+          <button className="inline-flex items-center justify-center bg-green-700 text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl hover:bg-green-800 transition-all duration-300">
             <Mail className="h-5 w-5 mr-2" />
             Partner With Us
           </button>
-          <button className="inline-flex items-center justify-center bg-transparent border-2 border-red-700 text-red-700 px-8 py-3 rounded-lg font-semibold hover:bg-red-700 hover:text-white transition-all duration-300">
+          <button className="inline-flex items-center justify-center bg-transparent border-2 border-green-700 text-green-700 px-8 py-3 rounded-lg font-semibold hover:bg-green-700 hover:text-white transition-all duration-300">
             <Download className="h-5 w-5 mr-2" />
             Partnership Guide
           </button>

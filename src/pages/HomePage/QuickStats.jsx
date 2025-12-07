@@ -25,19 +25,24 @@ const stats = [
 
 const QuickStats = () => {
   return (
-    <div className="grid grid-cols-3 gap-6 text-gray-100">
+    <div className="grid grid-cols-3 gap-6">
       {stats.map((stat, index) => (
         <div
           key={index}
-          className="text-center lg:text-left transition-transform duration-300 hover:scale-105"
+          className="text-center lg:text-left transition-transform duration-300 hover:scale-105 group"
         >
           <div className="flex items-center gap-2 mb-1 justify-center lg:justify-start">
-            {stat.icon}
-            <p className="text-3xl font-bold text-white">
+            <div className="transform group-hover:scale-110 transition-transform">
+              {stat.icon}
+            </div>
+            {/* Adaptive Text Color */}
+            <p className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white transition-colors duration-300">
               <CountUp end={stat.value} duration={2} suffix={stat.suffix} />
             </p>
           </div>
-          <p className="text-sm text-gray-400">{stat.label}</p>
+          <p className="text-sm text-gray-600 dark:text-gray-400 font-medium">
+            {stat.label}
+          </p>
         </div>
       ))}
     </div>

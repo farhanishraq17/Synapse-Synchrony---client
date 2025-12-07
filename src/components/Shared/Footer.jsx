@@ -78,7 +78,7 @@ const Footer = () => {
           >
             <div className="flex items-center space-x-3 mb-6">
               <img src={logo} alt="Habitude Logo" className="h-10 w-10" />
-              <h2 className="text-2xl font-bold text-red-600 dark:text-red-500">
+              <h2 className="text-2xl font-bold text-green-600 dark:text-green-500">
                 Habitude
               </h2>
             </div>
@@ -90,19 +90,19 @@ const Footer = () => {
 
             <div className="space-y-3 text-sm sm:text-base">
               <div className="flex items-center gap-3 flex-wrap">
-                <MapPin className="h-5 w-5 text-red-600 dark:text-red-500" />
+                <MapPin className="h-5 w-5 text-green-600 dark:text-green-500" />
                 <span className="text-gray-600 dark:text-gray-300">
                   Dhaka, Bangladesh
                 </span>
               </div>
               <div className="flex items-center gap-3 flex-wrap">
-                <Phone className="h-5 w-5 text-red-600 dark:text-red-500" />
+                <Phone className="h-5 w-5 text-green-600 dark:text-green-500" />
                 <span className="text-gray-600 dark:text-gray-300">
                   +880 1700-123456
                 </span>
               </div>
               <div className="flex items-center gap-3 flex-wrap">
-                <Mail className="h-5 w-5 text-red-600 dark:text-red-500" />
+                <Mail className="h-5 w-5 text-green-600 dark:text-green-500" />
                 <span className="text-gray-600 dark:text-gray-300">
                   support@habitude.com
                 </span>
@@ -134,12 +134,12 @@ const Footer = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email"
-                  className="flex-1 px-4 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 transition-colors"
-                  required
+                  className="flex-1 px-4 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500 transition-colors"
+                  requigreen
                 />
                 <button
                   type="submit"
-                  className="bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition-all flex items-center justify-center whitespace-nowrap shadow-md hover:shadow-lg"
+                  className="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-all flex items-center justify-center whitespace-nowrap shadow-md hover:shadow-lg"
                 >
                   Subscribe
                   <ArrowRight className="h-4 w-4 ml-2" />
@@ -151,8 +151,8 @@ const Footer = () => {
                   type="checkbox"
                   checked={agreed}
                   onChange={(e) => setAgreed(e.target.checked)}
-                  className="mt-1 w-4 h-4 accent-red-600 border-gray-300 dark:border-gray-700 rounded focus:ring-red-600"
-                  required
+                  className="mt-1 w-4 h-4 accent-green-600 border-gray-300 dark:border-gray-700 rounded focus:ring-green-600"
+                  requigreen
                 />
                 <span>
                   I agree to receive inspiring habit tips and updates.
@@ -177,7 +177,7 @@ const Footer = () => {
                       key={index}
                       to={social.path}
                       aria-label={social.label}
-                      className="bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-red-600 hover:text-white dark:hover:bg-red-600 p-3 rounded-full transition-all duration-300"
+                      className="bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-green-600 hover:text-white dark:hover:bg-green-600 p-3 rounded-full transition-all duration-300"
                     >
                       <Icon className="h-5 w-5 sm:h-6 sm:w-6" />
                     </Link>
@@ -200,7 +200,7 @@ const Footer = () => {
             { title: 'Resources', links: resourceLinks },
           ].map((section, index) => (
             <div key={index}>
-              <h3 className="text-lg font-bold mb-6 text-red-600 dark:text-red-500">
+              <h3 className="text-lg font-bold mb-6 text-green-600 dark:text-green-500">
                 {section.title}
               </h3>
               <ul className="space-y-3 text-sm sm:text-base">
@@ -208,7 +208,7 @@ const Footer = () => {
                   <li key={i}>
                     <Link
                       to={link.path}
-                      className="text-gray-600 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400 transition-colors duration-200 block"
+                      className="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400 transition-colors duration-200 block"
                     >
                       {link.name}
                     </Link>
@@ -236,7 +236,7 @@ const Footer = () => {
                   <Link
                     key={i}
                     to="#"
-                    className="text-gray-500 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400 transition-colors"
+                    className="text-gray-500 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400 transition-colors"
                   >
                     {item}
                   </Link>
