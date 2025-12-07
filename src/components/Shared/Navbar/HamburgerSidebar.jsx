@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router';
 import HabitudeLogo from './HabitudeLogo';
 import NavButton from './NavButton';
 // import useAuth from '../../../hooks/UseAuth';
-import toast from 'react-hot-toast';
+// import toast from 'react-hot-toast';
 
 const HamburgerSidebar = () => {
   const navigate = useNavigate();
@@ -45,10 +45,7 @@ const HamburgerSidebar = () => {
           />
         )}
         {user ? (
-          <button
-            className="btn bg-black text-white ml-4"
-            onClick={HandleLogout}
-          >
+          <button className="btn bg-black text-white ml-4" onClick={() => {}}>
             Logout
           </button>
         ) : (

@@ -1,7 +1,7 @@
 // import ThemeSwitcher from '../shared/ThemeSwitcher';
 // import AuthenticationButton from './AuthenticationButton';
 
-import toast from 'react-hot-toast';
+// import toast from 'react-hot-toast';
 // import useAuth from '../../../hooks/UseAuth';
 import NavButton from './NavButton';
 import { useNavigate } from 'react-router';
@@ -40,7 +40,7 @@ const NavMenuGeneral = () => {
           />
         )}
         {user ? (
-          <button className="btn bg-black text-white" onClick={HandleLogout}>
+          <button className="btn bg-black text-white" onClick={() => {}}>
             Logout
           </button>
         ) : (
