@@ -15,8 +15,8 @@ const NavButton = ({
         btn bg-transparent border-0 shadow-none tracking-wider text-${textSize} flex items-center gap-2 transition-colors duration-200
         ${
           isActive
-            ? 'text-[#EF4444] font-semibold' // Active state color
-            : 'text-gray-700 hover:text-[#EF4444] dark:text-gray-200 dark:hover:text-[#EF4444]' // Default & Hover
+            ? 'text-[#097133] font-semibold' // Active state color
+            : 'text-gray-700 hover:text-[#097133] dark:text-gray-200 dark:hover:text-[#097133]' // Default & Hover
         }
       `}
     >

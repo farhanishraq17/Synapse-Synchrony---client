@@ -9,7 +9,7 @@ import {
   ArrowRight,
 } from 'lucide-react';
 import { X as XIcon } from 'lucide-react';
-import logo from '../../assets/Logo/Rootfarming.png';
+import logo from '../../assets/Logo/Rootfarming.png'; // Keep existing logo for now
 import { Link } from 'react-router';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -32,15 +32,15 @@ const Footer = () => {
   };
 
   const habitLinks = [
-    { name: 'Add Habit', path: '/add-habit' },
-    { name: 'My Habits', path: '/my-habits' },
-    { name: 'Browse Public Habits', path: '/browse' },
+    { name: 'Join Community', path: '/community' },
+    { name: 'My Progress', path: '/my-progress' },
+    { name: 'Wellness Tracker', path: '/wellness-tracker' },
     { name: 'Motivation Feed', path: '#' },
-    { name: 'Analytics Dashboard', path: '#' },
+    { name: 'Student Dashboard', path: '#' },
   ];
 
   const companyLinks = [
-    { name: 'About Habitude', path: '#' },
+    { name: 'About Us', path: '#' },
     { name: 'Our Mission', path: '#' },
     { name: 'Join Our Team', path: '#' },
     { name: 'Press & Media', path: '#' },
@@ -48,8 +48,8 @@ const Footer = () => {
   ];
 
   const resourceLinks = [
-    { name: 'Habit Guides', path: '#' },
-    { name: 'Productivity Tips', path: '#' },
+    { name: 'Student Resources', path: '#' },
+    { name: 'Wellness Guides', path: '#' },
     { name: 'Community Stories', path: '#' },
     { name: 'Privacy Policy', path: '#' },
     { name: 'Terms of Service', path: '#' },
@@ -77,15 +77,16 @@ const Footer = () => {
             data-aos-delay="100"
           >
             <div className="flex items-center space-x-3 mb-6">
-              <img src={logo} alt="Habitude Logo" className="h-10 w-10" />
+              <img src={logo} alt="Synapse Logo" className="h-10 w-10" />
               <h2 className="text-2xl font-bold text-green-600 dark:text-green-500">
-                Habitude
+                Synapse
               </h2>
             </div>
 
             <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed text-sm sm:text-base">
-              Build lasting habits. Track your progress. Celebrate your growth.
-              Habitude helps you stay consistent — one small win at a time.
+              Empowering students with wellness, collaboration, and growth — one
+              habit at a time. Build consistency, track your progress, and
+              connect with a community that supports your success.
             </p>
 
             <div className="space-y-3 text-sm sm:text-base">
@@ -104,7 +105,7 @@ const Footer = () => {
               <div className="flex items-center gap-3 flex-wrap">
                 <Mail className="h-5 w-5 text-green-600 dark:text-green-500" />
                 <span className="text-gray-600 dark:text-gray-300">
-                  support@habitude.com
+                  support@synapse.com
                 </span>
               </div>
             </div>
@@ -117,11 +118,11 @@ const Footer = () => {
             data-aos-delay="200"
           >
             <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-              Join the Growth Circle
+              Join the Synapse Community
             </h3>
             <p className="text-gray-600 dark:text-gray-300 mb-6 text-sm sm:text-base">
-              Get motivation, productivity insights, and habit-building secrets
-              delivered weekly.
+              Get tips, motivation, and wellness insights delivered weekly to
+              help you build better habits and achieve your goals.
             </p>
 
             <form
@@ -135,7 +136,7 @@ const Footer = () => {
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email"
                   className="flex-1 px-4 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500 transition-colors"
-                  requigreen
+                  required
                 />
                 <button
                   type="submit"
@@ -152,10 +153,10 @@ const Footer = () => {
                   checked={agreed}
                   onChange={(e) => setAgreed(e.target.checked)}
                   className="mt-1 w-4 h-4 accent-green-600 border-gray-300 dark:border-gray-700 rounded focus:ring-green-600"
-                  requigreen
+                  required
                 />
                 <span>
-                  I agree to receive inspiring habit tips and updates.
+                  I agree to receive updates and habit tips from Synapse.
                 </span>
               </label>
             </form>
@@ -227,8 +228,8 @@ const Footer = () => {
         >
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-500 dark:text-gray-400 text-sm">
-              © {new Date().getFullYear()} Habitude. Build your best self — one
-              habit at a time.
+              © {new Date().getFullYear()} Synapse. Empowering students for
+              success.
             </p>
             <div className="flex flex-wrap justify-center md:justify-end gap-4 text-sm">
               {['Privacy Policy', 'Terms of Service', 'Cookie Policy'].map(

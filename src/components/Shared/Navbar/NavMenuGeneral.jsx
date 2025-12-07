@@ -11,7 +11,6 @@ const NavMenuGeneral = () => {
       <NavButton label="Home" address="/" />
       <NavButton label="About Us" address="/about" />
       <NavButton label="Contact Us" address="/contact" />
-      <NavButton label="All Habits" address="/browse-habits" />
 
       <ModeToggle />
 
@@ -32,7 +31,7 @@ const NavMenuGeneral = () => {
       ) : (
         <button
           onClick={() => navigate('/auth')}
-          className="btn bg-[#EF4444] text-white hover:bg-[#dc2626] border-none ml-2 px-6"
+          className="btn bg-[#097133] text-white hover:bg-[#04642a] border-none ml-2 px-6"
         >
           Login
         </button>

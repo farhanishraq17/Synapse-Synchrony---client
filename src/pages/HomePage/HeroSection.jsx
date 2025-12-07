@@ -85,7 +85,7 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-20">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-5 pb-20 ">
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
           {/* LEFT SIDE */}
           <div className="text-center lg:text-left" data-aos="fade-up">
