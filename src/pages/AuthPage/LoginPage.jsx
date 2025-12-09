@@ -4,13 +4,23 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Lock, Loader } from 'lucide-react';
 import Input from '@/components/Inputs/Input';
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
+import { useAuthStore } from '@/store/authStore';
+import toast from 'react-hot-toast';
 const LoginPage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const isLoading = false;
+  const { login, isLoading, error } = useAuthStore();
+  const navigate = useNavigate();
   const handleLogin = async (e) => {
     e.preventDefault();
+    try {
+      await login(email, password);
+      toast.success('Logged in successfully');
+      navigate('/');
+    } catch (error) {
+      console.log(error);
+    }
   };
   return (
     <motion.div
@@ -49,7 +59,7 @@ const LoginPage = () => {
               Forgot password?
             </Link>
           </div>
-          {/* {error && <p className="text-red-500 font-semibold mb-2">{error}</p>} */}
+          {error && <p className="text-red-500 font-semibold mb-2">{error}</p>}
 
           <motion.button
             whileHover={{ scale: 1.02 }}
@@ -69,7 +79,7 @@ const LoginPage = () => {
       <div className="px-8 py-4 bg-gray-900 bg-opacity-50 flex justify-center">
         <p className="text-sm text-gray-400">
           Don't have an account?{' '}
-          <Link to="/signup" className="text-green-400 hover:underline">
+          <Link to="/auth/signup" className="text-green-400 hover:underline">
             Sign up
           </Link>
         </p>
