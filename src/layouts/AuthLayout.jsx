@@ -1,5 +1,6 @@
 import FloatingShape from '@/components/FloatingShape';
 import React from 'react';
+import { Outlet } from 'react-router';
 
 const AuthLayout = () => {
   return (
@@ -25,6 +26,7 @@ const AuthLayout = () => {
         left="-10%"
         delay={2}
       />
+      <Outlet />
     </div>
   );
 };
