@@ -6,6 +6,7 @@ import AuthLayout from '@/layouts/AuthLayout';
 import AuthHomePage from '@/pages/AuthPage/AuthHomePage';
 import SignUpPage from '@/pages/AuthPage/SignUpPage';
 import LoginPage from '@/pages/AuthPage/LoginPage';
+import VerifyEmailPage from '@/pages/AuthPage/VerifyEmailPage';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: 'login',
         Component: LoginPage,
+      },
+      {
+        path: 'verify-email',
+        Component: VerifyEmailPage,
       },
     ],
   },
