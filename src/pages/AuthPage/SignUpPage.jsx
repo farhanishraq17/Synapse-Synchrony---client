@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
 import Input from '@/components/Inputs/Input';
 import { Lock, Mail, User } from 'lucide-react';
